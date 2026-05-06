@@ -1,9 +1,9 @@
-# Azhar Ali Portfolio
+# Faheem Akbar Portfolio
 
-**Live Site:** https://azharalidayo.me  
-**GitHub:** https://github.com/YOUR_USERNAME/azhar-ali-portfolio *(update after push)*
+**Live Site:** https://faheemakbar.me  
+**GitHub:** https://github.com/YOUR_USERNAME/faheem-akbar-portfolio *(update after push)*
 
-This is the official portfolio website for Azhar Ali, showcasing skills, projects, and professional information.
+This is the official portfolio website for Faheem Akbar, showcasing skills, projects, and professional information.
 
 ## 🎯 Quick Actions
 
@@ -15,7 +15,7 @@ This is the official portfolio website for Azhar Ali, showcasing skills, project
 # GitHub: git init && git add . && git commit -m "Initial" && git push
 ```bash
 # Upload .htaccess to your server
-# Test: https://azharalidayo.me/js/ (should return 403 Forbidden)
+# Test: https://faheemakbar.me/js/ (should return 403 Forbidden)
 # Done! ✅
 ```
 
@@ -279,5 +279,5 @@ Old files and unused assets are stored in timestamped backup folders:
 
 ---
 
-**Built with ❤️ by Azhar Ali**  
-© 2025 Azhar Ali. All rights reserved.
+**Built with ❤️ by Faheem-Akbar**  
+© 2025 Faheem-Akbar. All rights reserved.
