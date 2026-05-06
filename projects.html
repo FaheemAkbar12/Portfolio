@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com cdn.jsdelivr.net 'unsafe-eval'; style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com fonts.googleapis.com cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'">
+    
+    <!-- SEO Meta Tags -->
+    <title>Projects | Faheem Akbar</title>
+    <meta name="description" content="Selected engineering projects with honest, concise descriptions and links to source code.">
+    <meta name="keywords" content="Faheem Akbar, Projects, Portfolio, MERN, Socket.io, Java, OOP, DSA">
+    <meta name="author" content="Faheem Akbar">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    
+    <link rel="canonical" href="https://www.YOUR-DOMAIN.com/projects.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Projects | Faheem Akbar - Cybersecurity Specialist & Full-Stack Developer">
+    <meta property="og:description" content="Explore selected engineering work with clear scope and contributions.">
+    <meta property="og:image" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta property="og:image:secure_url" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Faheem Akbar - Projects Portfolio">
+    <meta property="og:url" content="https://www.YOUR-DOMAIN.com/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Faheem Akbar - Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@FaheemAkbar336">
+    <meta name="twitter:creator" content="@FaheemAkbar336">
+    <meta name="twitter:title" content="Projects | Faheem Akbar - Cybersecurity Specialist & Full-Stack Developer">
+    <meta name="twitter:description" content="Explore selected engineering work with clear scope and contributions.">
+    <meta name="twitter:image" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta name="twitter:image:alt" content="Faheem Akbar - Projects Portfolio">
+    
+    <!-- Theme Color and PWA Settings - Force Dark Theme -->
+    <meta name="theme-color" content="#0a0f1f">
+    <meta name="color-scheme" content="dark">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Faheem Akbar Portfolio">
+    
+    <!-- Performance optimization hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/profile/logo.png">
+    <link rel="shortcut icon" type="image/jpeg" href="assets/images/profile/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/profile/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles/min/main.min.css">
+    <link rel="stylesheet" href="assets/styles/components/mobile-responsive.css">
+    <link rel="stylesheet" href="assets/styles/components/audit-fixes.css">
+    <link rel="stylesheet" href="assets/styles/components/attack-surface.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-main" tabindex="0">Skip to main content</a>
+    
+    <div id="vanta-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/profile/logo.png" alt="Faheem Akbar" class="logo-img" loading="eager" fetchpriority="high" width="50" height="50">
+                <span class="logo-text">Faheem Akbar</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="assets/documents/Resume(CV).pdf" class="nav-link" download="Faheem-Akbar-Resume.pdf">Resume</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Featured Projects</h2>
+                <p class="section-subtitle">Selected Engineering Work</p>
+            </div>
+
+            <!-- Professional notice -->
+            <div class="projects-info" role="note" aria-live="polite">
+                <p>Some builds are intentionally offline.<br>Semester projects will go live after final validation.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- AI Legal Assistant (RAG) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/jobportal.png" alt="Job Portal System" loading="lazy" width="400" height="220" class="lazy-image" sizes="(max-width: 768px) 100vw, 400px">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FaheemAkbar336/Data-Science.git" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View AI Legal Assistant (RAG) on GitHub" title="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Legal Assistant (RAG)</h3>
+                        <p class="project-description">
+                            <strong>Scope:</strong> Scope:  Build a RAG-based legal platform for quick query resolution and document analysis to streamline research and workflows.
+                            <br><br>
+                            <strong>Focus:</strong> Deliver fast, accurate legal insights through RAG-powered query handling and efficient document analysis.
+                        </p> <br>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">AI-Integration</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- RentItOut & TravelBuddy -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/RentItOut.png" alt="RentItOut & TravelBuddy" loading="lazy" width="400" height="220" class="lazy-image" sizes="(max-width: 768px) 100vw, 400px">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FaheemAkbar336/RentItOut-Web-Engineering-Project.git" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View RentItOut & TravelBuddy on GitHub" title="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RentItOut & TravelBuddy</h3>
+                        <p class="project-description">
+                            <strong>Scope:</strong>Build a full-stack travel booking platform with user authentication, dynamic listings, and RESTful APIs to enable seamless browsing and booking experiences.
+
+                            <br><br>
+                            <strong>Focus:</strong>Deliver a seamless and responsive travel booking experience with secure authentication, dynamic listings, and efficient backend data management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">REACT.JS</span>
+                            <span class="tech-tag">NODE.JS</span>
+                            <span class="tech-tag">SOCKET.IO</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- E-Commerce Management (Java) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/E-Commerse.png" alt="E-Commerce Management (Java)" loading="lazy" width="400" height="220" class="lazy-image" sizes="(max-width: 768px) 100vw, 400px">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FaheemAkbar336/E_Commerce_Store.git" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View E-Commerce Management on GitHub" title="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerse Management</h3>
+                        <p class="project-description">
+                            <strong>Scope:</strong> Develop a Java Swing-based desktop e-commerce application that simulates product browsing, cart management, and checkout functionality using core data structures.
+                            <br><br>
+                            <strong>Focus:</strong> Create an interactive shopping experience while demonstrating real-world implementation of LinkedList, Stack, and Queue for efficient cart operations and order handling.
+                        </p> <br>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Data Structures</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Highlight: Frontend and Data Scientist Internships -->
+              <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projects/Internships.png" alt="Virtual Internships" loading="lazy" width="400" height="220" class="lazy-image" sizes="(max-width: 768px) 100vw, 400px">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/FaheemAkbar336?tab=repositories" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Virtual Internships on GitHub" title="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Virtual Internships</h3>
+                        <p class="project-description">
+                            <strong>Scope:</strong> Complete structured virtual internship tasks by building project-based solutions that simulate real-world industry problems.
+                            <br><br>
+                            <strong>Focus:</strong> Apply technical skills to solve practical tasks, improve problem-solving ability, and gain hands-on experience in a simulated professional environment.
+                        </p> <br>
+                        <div class="project-tech">
+                            <a href="https://github.com/FaheemAkbar336/Frontend-development-Kohaq-Internship.git" target="_blank" rel="noopener noreferrer"><span class="tech-tag">Frontend Development (Kohaq)</span></a>
+                            <a href="https://github.com/FaheemAkbar336/Data-Science-Codealpha-Internship-Task.git" target="_blank" rel="noopener noreferrer"><span class="tech-tag">Data Science (Codealpha)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================
+         RELOCATED: Attack Surface Overview Section
+         Originally from skills.html - Now displayed as a
+         security visualization mini-project/demo
+         =================================================== -->
+    <section class="attack-surface-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fa-solid fa-radar"></i>
+                <h2 class="glitch-text" data-text="Attack Surface Overview">Attack Surface Overview</h2>
+                <p class="section-description">Security analysis of application layers and potential vulnerability exposure areas</p>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="attackSurfaceChart"></canvas>
+            </div>
+            
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: rgba(0, 255, 255, 0.2); border: 2px solid #0ff;"></div>
+                    <span>Current attack surface mapping across different application layers</span>
+                </div>
+                <p class="chart-note">
+                    <i class="fas fa-info-circle"></i>
+                    Higher values indicate larger attack surfaces requiring enhanced security measures. This visualization helps identify critical areas for security hardening and penetration testing focus.
+                </p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__section">
+                <div class="footer__logo">
+                    <img src="assets/images/profile/logo.png" alt="Faheem Akbar Logo" class="footer-logo" loading="lazy" width="120" height="120">
+                    <span class="footer-brand-name">Faheem Akbar</span>
+                </div>
+                <p class="footer-description">Full-Stack Software Engineer and Cybersecurity Specialist, delivering robust, secure, and scalable solutions across web, mobile, and desktop platforms. Proficient in C++, Java, Python, and Flutter, with a passion for innovative, high-performance applications.</p>
+                <div class="footer__social">
+                    <a href="mailto:faheemakbar.cs@gmail.com" aria-label="Email Faheem Akbar">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/923001324336" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/iamfaheemakbar/" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/FaheemAkbar336" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__section">
+                <h3>Quick Links</h3>
+                <div class="footer__links">
+                    <a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a>
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Projects</a>
+                    <a href="skills.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Skills</a>
+                    <a href="journey.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Journey</a>
+                    <a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a>
+                    <a href="assets/documents/Resume(CV).pdf" target="_blank" rel="noopener noreferrer" download="Faheem-Akbar-Resume.pdf"><i class="fas fa-chevron-right" aria-hidden="true"></i> Resume</a>
+                </div>
+            </div>
+            
+            <div class="footer__section footer__section--technical">
+                <h3>Technical Focus</h3>
+                <div class="footer__links">
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Full-Stack Development</a>
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Real-Time Systems</a>
+                    <a href="skills.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Cybersecurity</a>
+                    <a href="index.html#profile"><i class="fas fa-chevron-right" aria-hidden="true"></i> Profile</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">
+                &copy; <span id="current-year">2025</span> Faheem Akbar. All rights reserved. <br>Built with Passion and code
+            </p>
+            <div class="footer__actions">
+                <button id="explain-mode-trigger" class="footer-action-btn" aria-label="Start site explanation walkthrough">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <span>Explain this site</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab-message" id="fab-message" aria-label="Go to contact form" title="Contact Me" style="position: fixed !important; bottom: 30px !important; right: 30px !important; left: auto !important; top: auto !important;">
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cubes.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js" defer></script>
+    <script src="js/particle-bg.js" defer></script>
+    <script src="assets/scripts/min/force-dark-theme.js"></script>
+    <script src="assets/scripts/min/main.min.js" defer></script>
+    <script src="assets/scripts/min/header-animations.js" defer></script>
+    <script src="assets/scripts/min/accessibility.js" defer></script>
+    <script src="assets/scripts/min/seo-enhancements.js" defer></script>
+    <script src="assets/scripts/min/performance.js" defer></script>
+    <script src="assets/scripts/min/navigation-fix.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+    <script src="js/glitch-text.js" defer></script>
+    <script src="js/fab-message.js" defer></script>
+    <script src="js/coming-soon-modal.js" defer></script>
+    <script src="js/self-explaining-system.js" defer></script>
+    <script src="js/system-state-mode.js" defer></script>
+    
+    <script>
+        // Update footer year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Lightweight Chess AI speed comparison
+        (function(){
+            const bfEl = document.getElementById('bf-input');
+            const dEl = document.getElementById('depth-input');
+            const btn = document.getElementById('compare-btn');
+            const naiveNodesEl = document.getElementById('naive-nodes');
+            const optNodesEl = document.getElementById('opt-nodes');
+            const naiveTimeEl = document.getElementById('naive-time');
+            const optTimeEl = document.getElementById('opt-time');
+            if(!bfEl || !dEl || !btn) return;
+
+            // Assume ~0.02 ms per position (simulated work)
+            const msPerNode = 0.02;
+
+            function formatNumber(n){
+                return n.toLocaleString('en-US');
+            }
+
+            function estimate(bf, depth){
+                const naive = Math.pow(bf, depth);
+                // Simple pruning estimate (~40% of naive work). Not exact, just illustrative.
+                const optimized = Math.round(naive * 0.4);
+                return {
+                    naive,
+                    optimized,
+                    naiveMs: naive * msPerNode,
+                    optMs: optimized * msPerNode
+                };
+            }
+
+            btn.addEventListener('click', () => {
+                const bf = Math.max(2, Math.min(40, parseInt(bfEl.value || '20', 10)));
+                const d = Math.max(2, Math.min(6, parseInt(dEl.value || '4', 10)));
+                const { naive, optimized, naiveMs, optMs } = estimate(bf, d);
+                naiveNodesEl.textContent = formatNumber(naive);
+                optNodesEl.textContent = formatNumber(optimized);
+                naiveTimeEl.textContent = `${naiveMs.toFixed(2)} ms`;
+                optTimeEl.textContent = `${optMs.toFixed(2)} ms`;
+            });
+        })();
+    </script>
+    
+    <!-- Attack Surface Radar Chart - Relocated from skills.html -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('attackSurfaceChart');
+            if (!ctx) return;
+            
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'UI Surface',
+                        'Client Logic',
+                        'Backend APIs',
+                        'Security Layer',
+                        'Performance'
+                    ],
+                    datasets: [{
+                        label: 'Attack Surface Exposure',
+                        data: [85, 80, 70, 65, 75],
+                        backgroundColor: 'rgba(0, 255, 255, 0.15)',
+                        borderColor: '#0ff',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#0ff',
+                        pointBorderColor: '#0a0f1f',
+                        pointBorderWidth: 2,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        pointHoverBackgroundColor: '#00ff41',
+                        pointHoverBorderColor: '#0ff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#0ff',
+                                font: {
+                                    family: "'Courier New', 'Consolas', monospace",
+                                    size: 14,
+                                    weight: '600'
+                                },
+                                padding: 15
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(10, 15, 31, 0.95)',
+                            titleColor: '#0ff',
+                            bodyColor: '#fff',
+                            borderColor: '#0ff',
+                            borderWidth: 1,
+                            padding: 12,
+                            displayColors: true,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.r + '% exposure';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            min: 0,
+                            ticks: {
+                                stepSize: 20,
+                                color: '#0ff',
+                                backdropColor: 'transparent',
+                                font: {
+                                    family: "'Courier New', 'Consolas', monospace",
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 255, 255, 0.2)',
+                                circular: true
+                            },
+                            pointLabels: {
+                                color: '#0ff',
+                                font: {
+                                    family: "'Courier New', 'Consolas', monospace",
+                                    size: 13,
+                                    weight: '700'
+                                },
+                                padding: 10
+                            },
+                            angleLines: {
+                                color: 'rgba(0, 255, 255, 0.3)'
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 1500,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com cdn.jsdelivr.net 'unsafe-eval'; style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com fonts.googleapis.com cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'">
+    
+    <!-- SEO Meta Tags -->
+    <title>Faheem Akbar | Frontend & Data Science Portfolio</title>
+    <meta name="description" content="Full-stack developer and data science enthusiast specializing in secure web applications, real-time systems, and cross-platform development.">
+    <meta name="keywords" content="Faheem Akbar, Data Scientist, Full-Stack Developer, C++, Java, Python, Flutter, Web Development, Mobile Development, Machine Learning, Data Analysis, Software Engineer">
+    <meta name="author" content="Faheem Akbar">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    
+    <link rel="canonical" href="https://www.faheemakbar.me">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Faheem Akbar | Data Scientist & Full-Stack Developer">
+    <meta property="og:description" content="Delivering secure, high-performance solutions with expertise in data science, machine learning, and full-stack development. Specializing in C++, Java, Python, Flutter, and modern web technologies.">
+    <meta property="og:image" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta property="og:image:secure_url" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Faheem Akbar - Data Scientist & Full-Stack Developer">
+    <meta property="og:url" content="https://www.YOUR-DOMAIN.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Faheem Akbar - Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@FaheemAkbar">
+    <meta name="twitter:creator" content="@FaheemAkbar">
+    <meta name="twitter:title" content="Faheem Akbar | Data Scientist & Full-Stack Developer">
+    <meta name="twitter:description" content="Delivering secure, high-performance solutions with expertise in data science, machine learning, and full-stack development. Specializing in C++, Java, Python, and Flutter.">
+    <meta name="twitter:image" content="https://www.YOUR-DOMAIN.com/assets/images/profile/profile_img.jpg">
+    <meta name="twitter:image:alt" content="Faheem Akbar - Data Scientist & Full-Stack Developer">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta property="profile:first_name" content="Faheem">
+    <meta property="profile:last_name" content="Akbar">
+    <meta property="profile:username" content="FaheemAkbar">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    
+    <!-- Theme Color and PWA Settings - Force Dark Theme -->
+    <meta name="theme-color" content="#0a0f1f">
+    <meta name="color-scheme" content="dark">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Faheem Akbar Portfolio">
+    
+    <!-- Performance optimization hints -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/profile/logo.png">
+    <link rel="shortcut icon" type="image/jpeg" href="assets/images/profile/logo.jpg">
+    <link rel="apple-touch-icon" href="assets/images/profile/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles/min/main.min.css">
+    <link rel="stylesheet" href="assets/styles/base/global-layout-spacing.css">
+    <link rel="stylesheet" href="assets/styles/components/mobile-responsive.css">
+    <link rel="stylesheet" href="assets/styles/components/mobile-ux-fixes.css">
+    <link rel="stylesheet" href="assets/styles/components/profile-section.css">
+    <link rel="stylesheet" href="assets/styles/components/education-section.css">
+    <link rel="stylesheet" href="assets/styles/components/education-achievements.css">
+    <link rel="stylesheet" href="assets/styles/components/form-success-animation.css">
+    <link rel="stylesheet" href="assets/styles/components/hacker-features.css">
+    <link rel="stylesheet" href="assets/styles/components/boot-loader.css">
+    <link rel="stylesheet" href="assets/styles/components/qa-optimizations.css">
+    <link rel="stylesheet" href="assets/styles/components/audit-fixes.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- C-Matrix Loading Screen -->
+    <div id="boot-loader" class="boot-loader" aria-label="Portfolio loading sequence">
+        <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+        <div class="scanline-overlay"></div>
+        <div class="vignette-overlay"></div>
+        <div class="terminal-panel">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="terminal-title">SYSTEM_ACCESS_v2.0</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line" id="line-1">
+                    <span class="prompt">&gt;</span>
+                    <span class="text" id="status-text" aria-live="polite"></span>
+                    <span class="cursor" id="typing-cursor"></span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Loading progress">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <div class="progress-shine"></div>
+                </div>
+                <div class="progress-percentage" id="progress-percentage">0%</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Skip Loader Button -->
+    <button id="skip-loader-btn" class="skip-loader-btn" aria-label="Skip loading animation (available in 2 seconds)" tabindex="0" disabled>
+        Skip <i class="fas fa-forward"></i>
+    </button>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#home" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Curiosity is the key to discovery. Those who seek, shall find. -->
+    <div id="vanta-bg"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/profile/logo.png" alt="Faheem Akbar" class="logo-img" loading="eager" fetchpriority="high" width="50" height="50">
+                <span class="logo-text">Faheem Akbar</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="assets/documents/Resume(CV).pdf" class="nav-link" download="Faheem-Akbar-Resume.pdf">Resume</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="sr-only">Toggle navigation menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="text-primary">Faheem Akbar</span></h1>
+                    <div class="hero-title-separator"></div>
+                    <div class="hero-subtitle professional-tagline" role="doc-subtitle">
+                        <span class="tagline-highlight">Full-Stack Developer</span>
+                        <span class="tagline-separator" aria-hidden="true">|</span>
+                        <span class="tagline-highlight">Flutter & Web Specialist</span>
+                        <span class="tagline-separator" aria-hidden="true">|</span>
+                        <span class="tagline-highlight">Data Scientist Enthusiast</span>
+                        <span class="tagline-separator" aria-hidden="true">|</span>
+                        <span class="tagline-highlight">Problem Solver</span>
+                    </div>
+                    <p class="hero-description">
+                        Building secure, scalable systems with focus on cybersecurity and cross-platform development.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="assets/documents/Resume(CV).pdf" class="btn btn-resume" target="_blank" rel="noopener noreferrer" download="Faheem-Akbar-Resume.pdf">
+                            <i class="fas fa-download"></i><span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="assets/images/profile/profile_img.jpg" alt="Faheem Akbar - Data Scientist and Full-Stack Developer" class="profile-img" width="180" height="180" loading="eager" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hacker Terminal Animation -->
+            <div class="hacker-terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <span class="terminal-title">faheem@portfolio:~$</span>
+                </div>
+                <div id="hacker-terminal"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section id="education-achievements" class="education-achievements-section">
+        <div class="container">
+            <div class="section-header-edu">
+                <h2 class="section-title-edu">
+                    <i class="fas fa-award"></i>
+                    Education & Achievements
+                </h2>
+                <p class="section-subtitle-edu">Academic Journey, Professional Certifications & Notable Accomplishments</p>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="education-timeline-wrapper">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-institution">Sukkur IBA University, Sukkur</h3>
+                        <p class="timeline-degree">B.Sc. in Computer Science</p>
+                        <p class="timeline-details">Focused on Data Science, Cyber Security & ML</p>
+                        <div class="timeline-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2023 – Present</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-institution">Government Descon Computer Training Center, Kashmore  </h3>
+                        <p class="timeline-degree">Certificate in Computer (CIT)</p>
+                        <div class="timeline-period">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PITP Program Certificates -->
+            <div class="pitp-certificates-wrapper">
+                <div class="pitp-certificates-header">
+                    <h3 class="pitp-certificates-title">
+                        <i class="fas fa-award"></i> DigiSkills Certificates
+                    </h3>
+                    <p class="pitp-certificates-subtitle"> Government of Pakistan Sponsored Training Programs</p>
+                </div>
+                <div class="pitp-certificates-grid">
+                    <!-- PITP Certificate 1 -->
+                    <div class="pitp-certificate-card">
+                        <div class="pitp-certificate-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="pitp-certificate-content">
+                            <h4 class="pitp-certificate-name">Freelancing & E-Commerce Management</h4>
+                            <p class="pitp-certificate-details">Batch 11</p>
+                            <div class="pitp-certificate-badge">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PITP Certificate 2 -->
+                    <div class="pitp-certificate-card">
+                        <div class="pitp-certificate-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="pitp-certificate-content">
+                            <h4 class="pitp-certificate-name">Graphic Designing & Video Editing</h4>
+                            <p class="pitp-certificate-details">DSTP 3.0, Batch 1</p>
+                            <div class="pitp-certificate-badge">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coursera & Google Certificates -->
+            <div class="certificates-wrapper">
+                <div class="certificates-header">
+                    <h3 class="certificates-title">
+                        <i class="fab fa-google"></i> Google & Coursera Certificates
+                    </h3>
+                    <p class="certificates-subtitle">Professional certifications in AI, IT, Security & Data Analysis</p>
+                </div>
+                <div class="certificates-grid">
+                    <!-- Certificate 1 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Design Prompts for Everyday Work Tasks</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 95.83%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/A19TG35HQTMX" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Design Prompts certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Start Writing Prompts like a Pro</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 83.33%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/WIMF3IWUOPUV" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Writing Prompts certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">IT Security: Defense against the Digital Dark Arts</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 96.06%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/A2SHBND0DRZO" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify IT Security certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Operating Systems and You: Becoming a Power User</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 95.83%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/BVZQ9FC5HSCK" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Operating Systems certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">GC</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Introduction to Generative AI</h4>
+                            <p class="certificate-provider">Google Cloud</p>
+                            <span class="certificate-grade">Grade: 100%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/5XHJ988Z0RUQ" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Generative AI certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 6 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">System Administration and IT Infrastructure Services</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 92.13%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/OWISPZ9QQHT1" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify System Administration certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 7 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">The Bits and Bytes of Computer Networking</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 97.10%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/8WZSULC9IAOG" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Computer Networking certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 8 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Accelerate Your Job Search with AI</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 100%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/ZGHASOJFOEO7" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Job Search with AI certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 9 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Speed Up Data Analysis and Presentation Building</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 100%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/WHWQ05B1P7GY" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Data Analysis certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 10 -->
+                    <div class="certificate-card">
+                        <div class="certificate-logo">G</div>
+                        <div class="certificate-content">
+                            <h4 class="certificate-name">Technical Support Fundamentals</h4>
+                            <p class="certificate-provider">Google</p>
+                            <span class="certificate-grade">Grade: 95.75%</span>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/NU2H4UG8AFFT" target="_blank" rel="noopener noreferrer" class="verify-btn" aria-label="Verify Technical Support certificate on Coursera">
+                                <i class="fas fa-certificate"></i> Verify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DataCamp Certificates -->
+            <div class="certificates-wrapper">
+                <div class="certificates-header">
+                    <h3 class="certificates-title">
+                        <i class="fas fa-database"></i> DataCamp Certificates
+                    </h3>
+                    <p class="certificates-subtitle">Python programming and data science foundations</p>
+                </div>
+                <div class="certificates-grid">
+                    <!-- DataCamp Certificate 1 -->
+                    <div class="certificate-card datacamp">
+                        <div class="certificate-logo">DC</div>
+                        <div>
+                            <h4 class="certificate-name">Introduction to Python</h4>
+                            <p class="certificate-provider">DataCamp</p>
+                            <span class="certificate-grade">Completed: Aug 28, 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- DataCamp Certificate 2 -->
+                    <div class="certificate-card datacamp">
+                        <div class="certificate-logo">DC</div>
+                        <div>
+                            <h4 class="certificate-name">Introduction to Statistics in Python</h4>
+                            <p class="certificate-provider">DataCamp</p>
+                            <span class="certificate-grade">Completed: Oct 03, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements & Volunteer Badges -->
+            <div class="achievements-wrapper">
+                <div class="achievements-header">
+                    <h3 class="achievements-title">
+                        <i class="fas fa-trophy"></i> Achievements & Recognition
+                    </h3>
+                    <p class="achievements-subtitle">Scholarships, Awards & Community Contributions</p>
+                </div>
+                <div class="achievements-badges">
+                    <!-- Badge 1 -->
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="achievement-text">SEEF Merit Scholar (Sukkur IBA)</span>
+                    </div>
+
+                    <!-- Badge 2 -->
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <span class="achievement-text">SIBAFEST Speed Programming Hackathon (Sukkur IBA University)</span>
+                    </div>
+
+                    <!-- Badge 3 -->
+                    <div class="achievement-badge">
+                        <div class="achievement-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <span class="achievement-text">Social Media Manager: Artificial Intelligence Community of Pakistan (AICP) Sukkur Chapter</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Profile Section -->
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fas fa-user-shield"></i> About Me</h2>
+                <p class="section-subtitle">Computer Science Student | Data Science, AI & ML Enthusiast</p>
+            </div>
+            
+            <div class="profile-content">
+                <p class="profile-text">
+                   I am a passionate Computer Science undergraduate at Sukkur IBA University with a 
+                   strong interest in software and web development. I enjoy building practical, user-focused applications 
+                   and have hands-on experience in full-stack development, as well as integrating AI-driven solutions into real-world projects.
+                </p>
+                
+                <p class="profile-text">
+                    My work includes developing platforms such as a RAG-powered legal assistant
+                     and a full-stack travel booking system, where I applied technologies like Python, Flask, Node.js, and MongoDB
+                      to create scalable and efficient solutions.
+                </p>
+                
+                <p class="profile-text">
+                    Beyond technical skills, I actively contribute to the tech community as a student executive member, mentoring peers and organizing initiatives that promote learning and collaboration. I thrive in fast-paced environments and enjoy solving complex problems through creative and structured thinking.
+
+I am continuously learning and exploring new technologies, with the goal of growing into a skilled software developer who builds impactful digital solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let's Build Something Together</h2>
+                <p class="cta-text">Interested in working together or have a project in mind?</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            <div class="footer__section">
+                <div class="footer__logo">
+                    <img src="assets/images/profile/logo.png" alt="Faheem Akbar Logo" class="footer-logo" loading="lazy" width="120" height="120">
+                    <span class="footer-brand-name">Faheem Akbar</span>
+                </div>
+                <p class="footer-description">Full-Stack Software Engineer and Data Scientist, delivering robust, secure, and scalable solutions across web, mobile, and desktop platforms. Proficient in C++, Java, Python, and Flutter, with a passion for innovative, high-performance applications.</p>
+                <div class="footer__social">
+                    <a href="mailto:faheemakbar.cs@gmail.com" aria-label="Email Faheem Akbar">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://wa.me/923001324336" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/iamfaheemakbar/" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/FaheemAkbar336/" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__section">
+                <h3>Quick Links</h3>
+                <div class="footer__links">
+                    <a href="index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Home</a>
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Projects</a>
+                    <a href="skills.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Skills</a>
+                    <a href="journey.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Journey</a>
+                    <a href="contact.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contact</a>
+                    <a href="assets/documents/Resume(CV).pdf" target="_blank" rel="noopener noreferrer" download="Faheem-Akbar-Resume.pdf"><i class="fas fa-chevron-right" aria-hidden="true"></i> Resume</a>
+                </div>
+            </div>
+            
+            <div class="footer__section footer__section--technical">
+                <h3>Technical Focus</h3>
+                <div class="footer__links">
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Full-Stack Development</a>
+                    <a href="projects.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Real-Time Systems</a>
+                    <a href="skills.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Cybersecurity</a>
+                    <a href="index.html#profile"><i class="fas fa-chevron-right" aria-hidden="true"></i> Profile</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__copyright">
+            <p class="footer__copyright-text">
+                &copy; <span id="current-year">2026</span> Faheem Akbar. All rights reserved. <br>Built with Passion and code
+            </p>
+            <div class="footer__actions">
+                <button id="explain-mode-trigger" class="footer-action-btn" aria-label="Start site explanation walkthrough">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <span>Explain this site</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab-message" id="fab-message" aria-label="Go to contact form" title="Contact Me" style="position: fixed !important; bottom: 30px !important; right: 30px !important; left: auto !important; top: auto !important;">
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+    <script src="assets/scripts/boot-loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cubes.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js" defer></script>
+    <script src="js/particle-bg.js" defer></script>
+    <script src="assets/scripts/min/force-dark-theme.js"></script>
+    <script src="assets/scripts/min/main.min.js" defer></script>
+    <script src="assets/scripts/min/header-animations.js" defer></script>
+    <script src="assets/scripts/min/accessibility.js" defer></script>
+    <script src="assets/scripts/min/seo-enhancements.js" defer></script>
+    <script src="assets/scripts/min/skill-tooltips.js" defer></script>
+    <script src="assets/scripts/min/testimonials.js" defer></script>
+    <script src="assets/scripts/min/performance.js" defer></script>
+    <script src="assets/scripts/min/navigation-fix.js" defer></script>
+    <script src="js/input-sanitizer.js"></script>
+    <script src="js/mobile-nav.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+    <script src="js/form-success-handler.js" defer></script>
+    <script src="js/glitch-text.js" defer></script>
+    <script src="js/fab-message.js" defer></script>
+    <script src="js/coming-soon-modal.js" defer></script>
+    <script src="js/hacker-terminal.js" defer></script>
+    <script src="assets/scripts/education-achievements.js" defer></script>
+    <script src="js/easter-egg.js" defer></script>
+    <script src="js/self-explaining-system.js" defer></script>
+    <script src="js/explain-mode.js" defer></script>
+    <script src="js/system-state-mode.js" defer></script>
+    
+    <script>
+        // Update footer year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Note: Form submission handlers are managed by form-success-handler.js
+        // The handler provides visual feedback with success animations and validation
+    </script>
+</body>
+</html>
+
