@@ -281,4 +281,3 @@ Old files and unused assets are stored in timestamped backup folders:
 
 **Built with ❤️ by Azhar Ali**  
 © 2025 Azhar Ali. All rights reserved.
-
